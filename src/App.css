@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+}
+
+nav button {
+  margin: 0 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Dashboard Container */
+.admin-dashboard,
+.user-dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green for primary actions */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Messages */
+.message {
+  margin-bottom: 15px;
+  color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Elections List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+li:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+  padding: 5px 10px;
+  background-color: #dc3545; /* Danger color for ending elections */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Results Section */
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.results h3 {
+  margin: 0 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+  }
+
+  form {
+    width: 95%; /* Increase width on smaller screens */
+  }
+
+  .admin-dashboard,
+  .user-dashboard {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5em; /* Reduce font size on very small screens */
+  }
+
+  input, button {
+    padding: 8px; /* Reduce padding on smaller screens */
+  }
+}
