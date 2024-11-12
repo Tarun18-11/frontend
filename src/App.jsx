@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import AdminDashboard from './components/AdminDashboard';
 import UserDashboard from './components/UserDashboard';
+import './app.css';
 const App = () => {
   const userRole = localStorage.getItem('role');
 
